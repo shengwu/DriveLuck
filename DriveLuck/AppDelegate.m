@@ -1,12 +1,12 @@
 //
 //  AppDelegate.m
-//  DriveLuck
+//  CarLuck
 //
-//  Created by Sheng Wu on 1/11/15.
-//  Copyright (c) 2015 Sheng Wu. All rights reserved.
+//  Created by Sheng Wu on 1/10/15.
 //
 
 #import "AppDelegate.h"
+#import <Wit/Wit.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +17,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [Wit sharedInstance].accessToken = @"2SONZV2J6MSZSO6GM5HYF4F3AIVOADRD"; // INSERT YOUR OWN ACCESS TOKEN HERE
+    //enabling detectSpeechStop will automatically stop listening the microphone when the user stop talking
+    //[Wit sharedInstance].detectSpeechStop = WITVadConfigDetectSpeechStop;
+    [Wit sharedInstance].detectSpeechStop = WITVadConfigDisabled;
     return YES;
 }
 

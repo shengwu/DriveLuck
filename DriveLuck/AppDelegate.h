@@ -1,9 +1,8 @@
 //
 //  AppDelegate.h
-//  DriveLuck
+//  CarLuck
 //
-//  Created by Sheng Wu on 1/11/15.
-//  Copyright (c) 2015 Sheng Wu. All rights reserved.
+//  Created by Sheng Wu on 1/10/15.
 //
 
 #import <UIKit/UIKit.h>
