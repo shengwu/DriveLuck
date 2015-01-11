@@ -86,7 +86,7 @@ NSURL *carStateUrl;
 NSString *apiToken = @"50e32f0b-de91-456a-a066-72f9517d046d";
 
 -(void)fetchCarState {
-    @"MojioAPIToken"
+    //@"MojioAPIToken"
 }
 
 -(void)updateFromNewState {
@@ -167,7 +167,7 @@ NSString *apiToken = @"50e32f0b-de91-456a-a066-72f9517d046d";
     
     // make urls, set up restkit
     carStateUrl = [NSURL URLWithString:carStateString];
-    [[[RKObjectManager sharedManager] HTTPClient] setDefaultHeader:myHeaderName value:myValue];
+    [[[RKObjectManager sharedManager] HTTPClient] setDefaultHeader:@"MojioAPIToken" value:apiToken];
     
     // Welcome the user!
     [self say:@"Welcome to Drive Luck. Begin driving when you're ready."];
